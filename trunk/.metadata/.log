@@ -1,0 +1,187 @@
+!SESSION 2012-10-03 10:18:55.549 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\student\Atollic\TrueSTUDIO\ARM_workspace\rumankoys\sp-vrs-rumankoys
+
+!ENTRY TrueSTUDIO 4 0 2012-10-03 10:18:56.376
+!MESSAGE Target:ARM, Model:Lite, Version:3.2.0, Installation dir:/C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM Lite 3.2.0/ide/
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-10-03 10:18:59.387
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-10-03 10:18:59.387
+!MESSAGE Conflict for 'org.eclipse.debug.ui.commands.OpenProfileConfigurations':
+HandlerActivation(commandId=org.eclipse.debug.ui.commands.OpenProfileConfigurations,
+	handler=ActionDelegateHandlerProxy(null,sst.tm.actions.OpenTestConfigurations),
+	expression=AndExpression(ActionSetExpression(sst.tm.testActionSet,org.eclipse.ui.internal.WorkbenchWindow@6ff0de),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@6ff0de)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.debug.ui.commands.OpenProfileConfigurations,
+	handler=ActionDelegateHandlerProxy(null,sst.csut.ui.launchConfigurations.OpenUnitTestConfigurations),
+	expression=AndExpression(ActionSetExpression(sst.csut.unittestActionSet,org.eclipse.ui.internal.WorkbenchWindow@6ff0de),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@6ff0de)),sourcePriority=16640)
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.808
+!MESSAGE sst.gp.core earlyStartup()
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.808
+!MESSAGE Register ResourceChangeListener to current workspace
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.808
+!MESSAGE Register WorkspaceSelectionListener to current workspace
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE ##sst.gp.core Util##PLATFORM_INSTALL_LOCATION: C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE Platform installed location : C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE IS_ATOLLIC_PLUGIN_INSTALLED : true
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE ATOLLIC_INSTALL_STATUS(stm32): -1
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE ATOLLIC_INSTALL_STATUS(avr): -1
+
+!ENTRY sst.gp.core 1 0 2012-10-03 10:18:59.823
+!MESSAGE ATOLLIC_INSTALL_STATUS(arm): 2
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.030
+!MESSAGE iconv is loaded.
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.030
+!MESSAGE est is loaded.
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.030
+!MESSAGE libiconv-2 is loaded.
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.030
+!MESSAGE libintl-2 is loaded.
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.030
+!MESSAGE xerces-c_2_7 is loaded.
+
+!ENTRY com.suresofttech.cs.rimx 1 0 2012-10-03 10:19:00.046
+!MESSAGE RIMXJNI is loaded.
+
+!ENTRY org.eclipse.ui 4 4 2012-10-03 10:19:00.046
+!MESSAGE Could not create action delegate for id: sst.tm.actions.TestLast
+
+!ENTRY org.eclipse.ui 4 4 2012-10-03 10:19:00.061
+!MESSAGE Internal plug-in action delegate error on creation.
+!STACK 0
+java.lang.NullPointerException: A handle object may not have a null identifier
+	at org.eclipse.core.commands.common.HandleObjectManager.checkId(HandleObjectManager.java:55)
+	at org.eclipse.core.commands.CommandManager.getCommand(CommandManager.java:544)
+	at org.eclipse.ui.internal.commands.CommandService.getCommand(CommandService.java:147)
+	at org.eclipse.debug.internal.ui.actions.RelaunchLastAction.initialize(RelaunchLastAction.java:136)
+	at org.eclipse.debug.internal.ui.actions.RelaunchLastAction.selectionChanged(RelaunchLastAction.java:118)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:165)
+	at org.eclipse.ui.plugin.AbstractUIPlugin$1.run(AbstractUIPlugin.java:486)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at com.atollic.truestudio.startup.exposed.MarketingDialog.open(Unknown Source)
+	at com.atollic.truestudio.startup.TrueStudioSplashHandler$3.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY sst.csgp 1 0 2012-10-03 10:19:00.061
+!MESSAGE platform install loc : C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide
+
+!ENTRY sst.tm 1 0 2012-10-03 10:19:00.061
+!MESSAGE C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\plugins\sst.tm_1.1.2.201203220858\CSHOME\
+
+!ENTRY sst.tm 1 0 2012-10-03 10:19:00.077
+!MESSAGE C:\Users\student\Atollic\TrueSTUDIO\ARM_workspace\rumankoys\sp-vrs-rumankoys\.metadata\.plugins\sst.tm
+
+!ENTRY sst.tm 1 0 2012-10-03 10:19:02.277
+!MESSAGE 
+
+
+---------------------------------------------------
+2012/10/03 10:19:02
+---------------------------------------------------
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-10-03 10:20:07.511
+!MESSAGE Indexed 'rumankoys_cv1' (0 sources, 43 headers) in 0.47 sec: 308 declarations; 631 references; 3 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.21%)
+
+!ENTRY org.eclipse.core.resources 4 2 2012-10-03 10:24:49.980
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at sst.csgp.prj.ResourceChangeManager.resourceChanged(ResourceChangeManager.java:81)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:249)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:199)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:129)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:164)
+	at org.eclipse.ui.actions.WorkspaceAction$2.runInWorkspace(WorkspaceAction.java:485)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 2 2012-10-03 10:24:59.871
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at sst.csgp.prj.ResourceChangeManager.resourceChanged(ResourceChangeManager.java:81)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:249)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:199)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:129)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:164)
+	at org.eclipse.ui.actions.WorkspaceAction$2.runInWorkspace(WorkspaceAction.java:485)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-10-03 10:25:52.942
+!MESSAGE Indexed 'basic_project' (28 sources, 54 headers) in 0.97 sec: 4,636 declarations; 15,766 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.00%)
+
+!ENTRY org.eclipse.core.resources 4 2 2012-10-03 10:27:07.159
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at sst.csgp.prj.ResourceChangeManager.resourceChanged(ResourceChangeManager.java:81)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:249)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:199)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:129)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:164)
+	at org.eclipse.ui.actions.WorkspaceAction$2.runInWorkspace(WorkspaceAction.java:485)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
