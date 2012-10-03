@@ -44,7 +44,7 @@ int tick = 0;
 
 //this is a function handling received data
 //it is not called automaticaly
-void handleReceivedChar(unsigned char data)
+void handleReceivedChar1(unsigned char data)
 {
 	if (data == 'A')
 	{
@@ -53,8 +53,36 @@ void handleReceivedChar(unsigned char data)
 	else if (data == 'T' || data == 't')
 	{
 		char buf[20];
-		sprintf(buf, "t=%d\n",tick);
+		sprintf(buf, "t=%d\r\n",tick);
 		PutsUART1(buf);
+	}
+}
+
+void handleReceivedChar2(unsigned char data)
+{
+	if (data == 'A')
+	{
+		PutsUART2("Zapredal som znak A");
+	}
+	else if (data == 'T' || data == 't')
+	{
+		char buf[60];
+		sprintf(buf, "t=%d nehehehe\r\n",tick);
+		PutsUART2(buf);
+	}
+}
+
+void handleReceivedChar3(unsigned char data)
+{
+	if (data == 'A')
+	{
+		PutsUART3("Som zabil znak A");
+	}
+	else if (data == 'T' || data == 't')
+	{
+		char buf[60];
+		sprintf(buf, "t=%d muhehehe\r\n",tick);
+		PutsUART3(buf);
 	}
 }
 
@@ -63,8 +91,18 @@ int main(void)
 {
 	initUSART1();	//configures all necessary to use USART1
 
-	RegisterCallbackUART1(&handleReceivedChar);	//register function to be called when interrupt occurs
-	PutsUART1("Running USART1...\n");			//write something to usart to see some effect
+	RegisterCallbackUART1(&handleReceivedChar1);	//register function to be called when interrupt occurs
+	PutsUART1("Running USART1...\r\n");			//write something to usart to see some effect
+
+	initUSART2();	//configures all necessary to use USART2
+
+	RegisterCallbackUART2(&handleReceivedChar2);	//register function to be called when interrupt occurs
+	PutsUART2("Running USART2...\r\n");			//write something to usart to see some effect
+
+	initUSART3();	//configures all necessary to use USART3
+
+	RegisterCallbackUART3(&handleReceivedChar3);	//register function to be called when interrupt occurs
+	PutsUART3("Running USART3...\r\n");			//write something to usart to see some effect
 
     while(1)
     {
