@@ -93,7 +93,7 @@ int main(void)
 
 	RegisterCallbackUART1(&handleReceivedChar1);	//register function to be called when interrupt occurs
 	PutsUART1("Running USART1...\r\n");			//write something to usart to see some effect
-
+/*
 	initUSART2();	//configures all necessary to use USART2
 
 	RegisterCallbackUART2(&handleReceivedChar2);	//register function to be called when interrupt occurs
@@ -103,9 +103,17 @@ int main(void)
 
 	RegisterCallbackUART3(&handleReceivedChar3);	//register function to be called when interrupt occurs
 	PutsUART3("Running USART3...\r\n");			//write something to usart to see some effect
+*/
+
+
 
     while(1)
     {
+    	char temp[128];
+    	volatile int i;
+    	sprintf( temp, "ADC pot: %i ADC term: %i Deg Celsius \r\n", ADC_read_potenciometer(), ADC_read_termistor()/*/4096.0*1353.0*//*/1.66-273.15*/ );
+    	PutsUART1( temp );
+    	for( i=0; i<500000; i++ );
     	tick++;
     }
 
