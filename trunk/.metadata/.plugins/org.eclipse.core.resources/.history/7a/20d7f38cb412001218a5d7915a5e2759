@@ -1,0 +1,36 @@
+/*
+ * adc.c
+ *
+ *  Created on: Oct 10, 2012
+ *      Author: student
+ */
+//ADC IN 10
+#include "mcu.h"
+
+void ADC_init(){
+	  ADC_InitTypeDef ADC_InitStruct;
+
+
+	  /* Reset ADC init structure parameters values */
+	  /* Initialize the ADC_Resolution member */
+	  ADC_InitStruct->ADC_Resolution = ADC_Resolution_12b;
+
+	  /* Initialize the ADC_ScanConvMode member */
+	  ADC_InitStruct->ADC_ScanConvMode = DISABLE;
+
+	  /* Initialize the ADC_ContinuousConvMode member */
+	  ADC_InitStruct->ADC_ContinuousConvMode = DISABLE;
+
+	  /* Initialize the ADC_ExternalTrigConvEdge member */
+	  ADC_InitStruct->ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+
+	  /* Initialize the ADC_ExternalTrigConv member */
+	  ADC_InitStruct->ADC_ExternalTrigConv = ADC_ExternalTrigConv_T2_CC2;
+
+	  /* Initialize the ADC_DataAlign member */
+	  ADC_InitStruct->ADC_DataAlign = ADC_DataAlign_Right;
+
+	  /* Initialize the ADC_NbrOfConversion member */
+	  ADC_InitStruct->ADC_NbrOfConversion = 1;
+
+}

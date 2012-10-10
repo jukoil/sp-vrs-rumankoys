@@ -1,0 +1,15 @@
+/*
+ * adc.c
+ *
+ *  Created on: Oct 10, 2012
+ *      Author: student
+ */
+//ADC IN 10
+
+
+void ADC_init(){
+	  ADC_InitTypeDef ADC_InitStructure;
+
+	  ADC_InitStructure.ADC_ContinuousConvMod = 1;
+
+}

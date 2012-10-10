@@ -2,4 +2,17 @@
 **** Build of configuration Debug for project basic_project ****
 
 **** Internal Builder is used for build               ****
-Nothing to build for basic_project
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'main':
+..\src\main.c:114:6: warning: implicit declaration of function 'ADC_read_potenciometer' [-Wimplicit-function-declaration]
+..\src\main.c:114:6: warning: implicit declaration of function 'ADC_read_termistor' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\system_stm32l1xx.o src\stm32l1xx_it.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+  27732	   1376	    232	  29340	   729c	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
