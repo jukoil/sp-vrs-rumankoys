@@ -29,6 +29,8 @@
 #include <stdio.h>
 #include "mcu.h"
 #include "usart.h"
+#include "pwm_out.h"
+#include "timer.h"
 
 
 /**
@@ -57,6 +59,26 @@ void handleReceivedChar1(unsigned char data)
 		PutsUART1(buf);
 	}
 }
+
+//this is a function handling received data
+//it is not called automaticaly
+void handleReceivedChar1pwm(unsigned char data)
+{
+	data = toupper(data);
+	if (data == 'I')
+	{
+    	PutsUART1( "Increasing\r\n" );
+    	if(TIM3->CCR2<=450)
+    		TIM3->CCR2+=50;
+	}
+	else if (data == 'D')
+	{
+    	PutsUART1( "Decreasing\r\n" );
+    	if(TIM3->CCR2>=50)
+    		TIM3->CCR2-=50;
+	}
+}
+
 
 void handleReceivedChar2(unsigned char data)
 {
@@ -87,11 +109,51 @@ void handleReceivedChar3(unsigned char data)
 }
 
 
+void handlerTimer(long long timeStamp){
+	if( TIM3->CCR2 >= 100 )
+		TIM3->CCR2-=100;
+	else
+		TIM3->CCR2=500;
+}
+
+void initUserButton(){
+
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+
+	  /*--------------------------------- GPIO Configuration -------------------------*/
+	  /* GPIOC Configuration: Pin 6 */
+	  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_0;
+	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+	  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	  GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
+	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+
+	  GPIO_Init(GPIOA, &GPIO_InitStructure);
+}
+
+char userButtonDown(){
+	static char lastPressed = 0;
+	char pressed = GPIO_ReadInputDataBit( GPIOA, GPIO_Pin_0 );
+	int result = !lastPressed && pressed;
+	lastPressed = pressed;
+	return result;
+}
+
+char userButtonUp(){
+	static char lastPressed = 0;
+	char pressed = GPIO_ReadInputDataBit( GPIOA, GPIO_Pin_0 );
+	int result = lastPressed && !pressed;
+	lastPressed = pressed;
+	return result;
+}
+
 int main(void)
 {
 	initUSART1();	//configures all necessary to use USART1
 
-	RegisterCallbackUART1(&handleReceivedChar1);	//register function to be called when interrupt occurs
+	RegisterCallbackUART1(&handleReceivedChar1pwm);	//register function to be called when interrupt occurs
 	PutsUART1("Running USART1...\r\n");			//write something to usart to see some effect
 /*
 	initUSART2();	//configures all necessary to use USART2
@@ -106,16 +168,46 @@ int main(void)
 */
 
 
-
+/*
     while(1)
     {
     	char temp[128];
     	volatile int i;
-    	sprintf( temp, "ADC pot: %i ADC term: %i Deg Celsius \r\n", ADC_read_potenciometer(), ADC_read_termistor()/*/4096.0*1353.0*//*/1.66-273.15*/ );
+    	sprintf( temp, "ADC pot: %i ADC term: %i Deg Celsius \r\n", ADC_read_potenciometer(), ADC_read_termistor());
     	PutsUART1( temp );
     	for( i=0; i<500000; i++ );
     	tick++;
     }
+*/
+
+	int horedole = 1;
+	initBaseTimer();
+	initPWM_Output();
+//	registerBaseTimerHandler(&handlerTimer);
+
+	volatile int i;
+
+    while(1)
+    {
+    /*	if( horedole ){
+    		TIM3->CCR2++;
+    		if(TIM3->CCR2>500)
+    			horedole=0;
+    	}else{
+    		TIM3->CCR2--;
+    		if(TIM3->CCR2<2)
+    			horedole=1;
+    	}
+    	for( i=0;i<500;i++);*/
+
+    	if ( userButtonDown() )
+    	{
+        	PutsUART1( "Button Decreasing\r\n" );
+        	if(TIM3->CCR2>=50)
+        		TIM3->CCR2-=50;
+    	}
+    }
+
 
 	return 0;
 }
