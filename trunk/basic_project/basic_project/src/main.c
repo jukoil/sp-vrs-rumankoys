@@ -27,10 +27,16 @@
 /* Includes */
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
 #include "mcu.h"
 #include "usart.h"
 #include "pwm_out.h"
 #include "timer.h"
+#include "i2c.h"
+#include "ads1100/inc/ads1100.h"
 
 
 /**
@@ -149,8 +155,57 @@ char userButtonUp(){
 	return result;
 }
 
+
+void cvicenie5(void);
+
 int main(void)
 {
+	cvicenie5();
+
+	return 0;
+}
+
+
+void cvicenie5(void){
+
+	initI2C1();
+
+	initADS1100();
+
+	initUSART2();	//configures all necessary to use USART2
+
+	RegisterCallbackUART2(&handleReceivedChar2);	//register function to be called when interrupt occurs
+	PutsUART2("Running USART2...\r\n");
+
+    while(1)
+    {
+    	if ( userButtonDown() )
+    	{
+			char temp[128];
+			double voltage;
+			double pressure;
+	    	unsigned int ADdata;
+    		/*Status status = */
+			readDataADS1100(&ADdata);
+			voltage = ADdata*3.0f/16384; // 2 na 15stu
+			pressure = (voltage/3.0+0.095)/0.009;
+    	//	if( status == Success ){				// function does not return Success...
+    			sprintf(temp,"ADC:%d U:%6.4lf p:%lf\r\n",ADdata,voltage,pressure);
+    			PutsUART2( temp );
+    		/*}else{
+    			sprintf(temp, "Reading ADC failed: %d\r\n" ,status);
+    			PutsUART2( temp );
+    		}*/
+
+
+    	}
+    }
+
+}
+
+
+void old(void){
+
 	initUSART1();	//configures all necessary to use USART1
 
 	RegisterCallbackUART1(&handleReceivedChar1pwm);	//register function to be called when interrupt occurs
@@ -159,8 +214,8 @@ int main(void)
 	initUSART2();	//configures all necessary to use USART2
 
 	RegisterCallbackUART2(&handleReceivedChar2);	//register function to be called when interrupt occurs
-	PutsUART2("Running USART2...\r\n");			//write something to usart to see some effect
-
+	PutsUART2("Running USART2...\r\n");	*/		//write something to usart to see some effect
+/*
 	initUSART3();	//configures all necessary to use USART3
 
 	RegisterCallbackUART3(&handleReceivedChar3);	//register function to be called when interrupt occurs
@@ -180,9 +235,9 @@ int main(void)
     }
 */
 
-	int horedole = 1;
+	/*int horedole = 1;
 	initBaseTimer();
-	initPWM_Output();
+	initPWM_Output();*/
 //	registerBaseTimerHandler(&handlerTimer);
 
 	volatile int i;
@@ -208,7 +263,4 @@ int main(void)
     	}
     }
 
-
-	return 0;
 }
-

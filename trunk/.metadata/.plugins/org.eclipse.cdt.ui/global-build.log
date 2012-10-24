@@ -39,3 +39,719 @@ Print size information done
 Generate build reports done
 Build complete for project basic_project
 Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\timer.o ..\src\timer.c
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:65:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:139:2: warning: implicit declaration of function 'initBaseTimer' [-Wimplicit-function-declaration]
+..\src\main.c:140:2: warning: implicit declaration of function 'initPWM_Output' [-Wimplicit-function-declaration]
+..\src\main.c:141:2: warning: implicit declaration of function 'registerBaseTimerHandler' [-Wimplicit-function-declaration]
+..\src\main.c:141:28: error: 'handleTimer' undeclared (first use in this function)
+..\src\main.c:141:28: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:147:11: error: 'i' undeclared (first use in this function)
+Build error occurred, build is stopped
+Time consumed: 452  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:65:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:146:2: warning: implicit declaration of function 'initBaseTimer' [-Wimplicit-function-declaration]
+..\src\main.c:147:2: warning: implicit declaration of function 'initPWM_Output' [-Wimplicit-function-declaration]
+..\src\main.c:148:2: warning: implicit declaration of function 'registerBaseTimerHandler' [-Wimplicit-function-declaration]
+..\src\main.c:148:28: error: 'handleTimer' undeclared (first use in this function)
+..\src\main.c:148:28: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:154:11: error: 'i' undeclared (first use in this function)
+Build error occurred, build is stopped
+Time consumed: 141  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:150:28: error: 'handleTimer' undeclared (first use in this function)
+..\src\main.c:150:28: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:156:11: error: 'i' undeclared (first use in this function)
+Build error occurred, build is stopped
+Time consumed: 140  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 609  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 608  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 577  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6900	     44	    216	   7160	   1bf8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 530  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6900	     44	    216	   7160	   1bf8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 609  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for basic_project
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6900	     44	    216	   7160	   1bf8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 515  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7016	     44	    216	   7276	   1c6c	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7140	     44	    216	   7400	   1ce8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for basic_project
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for basic_project
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7140	     44	    216	   7400	   1ce8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 530  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 530  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 499  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 734  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 500  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 686  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6964	     44	    216	   7224	   1c38	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 734  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\pwm_out.o ..\src\pwm_out.c
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6980	     44	    216	   7240	   1c48	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:154:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6856	     44	    216	   7116	   1bcc	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:156:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6892	     44	    216	   7152	   1bf0	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:152:2: error: unknown type name 'bool'
+..\src\main.c:152:18: error: 'true' undeclared (first use in this function)
+..\src\main.c:152:18: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:164:17: error: 'false' undeclared (first use in this function)
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+Build error occurred, build is stopped
+Time consumed: 141  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6996	     44	    216	   7256	   1c58	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 609  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7024	     44	    216	   7284	   1c74	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 500  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7020	     44	    216	   7280	   1c70	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 608  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6992	     44	    216	   7252	   1c54	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 499  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6992	     44	    216	   7252	   1c54	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 592  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7016	     44	    216	   7276	   1c6c	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 515  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7020	     44	    216	   7280	   1c70	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:152:6: warning: unused variable 'horedole' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6876	     44	    212	   7132	   1bdc	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:157:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:152:6: warning: unused variable 'horedole' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6876	     44	    212	   7132	   1bdc	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 515  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   6996	     44	    212	   7252	   1c54	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 577  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'initUserButton':
+..\src\main.c:125:4: error: 'GPIO_InitStructure' undeclared (first use in this function)
+..\src\main.c:125:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c: In function 'main':
+..\src\main.c:174:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:169:6: warning: unused variable 'horedole' [-Wunused-variable]
+Build error occurred, build is stopped
+Time consumed: 141  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'initUserButton':
+..\src\main.c:125:4: error: 'GPIO_InitStructure' undeclared (first use in this function)
+..\src\main.c:125:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:125:35: error: 'GPIO_Pin0' undeclared (first use in this function)
+..\src\main.c: In function 'main':
+..\src\main.c:174:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:169:6: warning: unused variable 'horedole' [-Wunused-variable]
+Build error occurred, build is stopped
+Time consumed: 141  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:176:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:171:6: warning: unused variable 'horedole' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7056	     44	    212	   7312	   1c90	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 500  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:180:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:175:6: warning: unused variable 'horedole' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7112	     44	    212	   7368	   1cc8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 484  ms.  
+
+**** Build of configuration Debug for project basic_project ****
+
+**** Internal Builder is used for build               ****
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu90 -DSTM32L1XX_MD -DUSE_STDPERIPH_DRIVER -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx -I../inc/ -I../hw/i2c_devices/bmp180/inc/ -I../mcu/inc/ -I../src/ -I../hw/spi_devices/nt7538/inc/ -I../hw/spi_devices/sst_flash/inc/ -I../hw/i2c_devices/md25/inc -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c
+..\src\main.c: In function 'handleReceivedChar1pwm':
+..\src\main.c:67:2: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+..\src\main.c: In function 'main':
+..\src\main.c:188:15: warning: unused variable 'i' [-Wunused-variable]
+..\src\main.c:183:6: warning: unused variable 'horedole' [-Wunused-variable]
+arm-atollic-eabi-gcc src\timer.o src\system_stm32l1xx.o src\stm32l1xx_it.o src\pwm_out.o src\main.o mcu\src\usart3.o mcu\src\usart2.o mcu\src\usart1.o mcu\src\mcu.o mcu\src\adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\startup\TrueSTUDIO\startup_stm32l1xx_md.o Libraries\CMSIS\CM3\CoreSupport\core_cm3.o -lm -o basic_project.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=basic_project.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x1000
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM Lite 3.2.0\Tools\arm-atollic-reports.jar sizeinfo basic_project.elf
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7112	     44	    212	   7368	   1cc8	basic_project.elf
+Print size information done
+Generate build reports done
+Build complete for project basic_project
+Time consumed: 483  ms.  
