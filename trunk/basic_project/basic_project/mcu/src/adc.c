@@ -11,7 +11,7 @@ void ADC_init(){
 	  ADC_InitTypeDef ADC_InitStruct;
 	  GPIO_InitTypeDef GPIO_InitStructure;
 
-	  GPIO_PinAFConfig(GPIOC, GPIO_PinSource0, GPIO_AF_USART1);
+	  //GPIO_PinAFConfig(GPIOC, GPIO_PinSource0, GPIO_AF_AN);
 
 	  /* Configure USART Tx and Rx pins */
 	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;			//alternating function
@@ -42,12 +42,12 @@ void ADC_init(){
 	  ADC_Cmd( ADC1, ENABLE );
 }
 
-  #define  IDD_MEASUREMENT_PIN       GPIO_Pin_0
-  #define  IDD_MEASUREMENT_GPIO_CLK  RCC_AHBPeriph_GPIOC
-  #define  IDD_MEASUREMENT_GPIO      GPIOC
-	#define  IDD_MEASUREMENT_ADC_CHANNELS  ADC_Channel_TempSensor | ADC_Channel_10
-	#define  IDD_MEASUREMENT_ADC_POTENCIOMETER ADC_Channel_10
-	#define  IDD_MEASUREMENT_ADC_TERMISTOR  ADC_Channel_TempSensor
+#define  IDD_MEASUREMENT_PIN       GPIO_Pin_0
+#define  IDD_MEASUREMENT_GPIO_CLK  RCC_AHBPeriph_GPIOC
+#define  IDD_MEASUREMENT_GPIO      GPIOC
+#define  IDD_MEASUREMENT_ADC_CHANNELS  ADC_Channel_TempSensor | ADC_Channel_10
+#define  IDD_MEASUREMENT_ADC_POTENCIOMETER ADC_Channel_10
+#define  IDD_MEASUREMENT_ADC_TERMISTOR  ADC_Channel_TempSensor
 //ADC_Channel_17
   #define  APOSTROPHE_OFF DOUBLEPOINT_OFF
 
@@ -126,7 +126,7 @@ int ADC_read_potenciometer(){
 	ADC_config();
 	//ADC_SoftwareStartConv( ADC1 );
 	/* ADC1 regular channel5 or channel1 configuration */
-	ADC_RegularChannelConfig(ADC1, IDD_MEASUREMENT_ADC_TERMISTOR, 1, ADC_SampleTime_192Cycles);
+	ADC_RegularChannelConfig(ADC1, IDD_MEASUREMENT_ADC_POTENCIOMETER, 1, ADC_SampleTime_192Cycles);
 
 	/* Define delay between ADC1 conversions */
 	ADC_DelaySelectionConfig(ADC1, ADC_DelayLength_Freeze);
@@ -156,7 +156,7 @@ int ADC_read_termistor(){
 	ADC_config();
 	//ADC_SoftwareStartConv( ADC1 );
 	/* ADC1 regular channel5 or channel1 configuration */
-	ADC_RegularChannelConfig(ADC1, IDD_MEASUREMENT_ADC_POTENCIOMETER, 1, ADC_SampleTime_192Cycles);
+	ADC_RegularChannelConfig(ADC1, IDD_MEASUREMENT_ADC_TERMISTOR, 1, ADC_SampleTime_192Cycles);
 
 	/* Define delay between ADC1 conversions */
 	ADC_DelaySelectionConfig(ADC1, ADC_DelayLength_Freeze);

@@ -61,6 +61,9 @@
 									<listOptionValue builtIn="false" value="C:/Users/student/Atollic/TrueSTUDIO/ARM_workspace/rumankoys/sp-vrs-rumankoys/basic_project/basic_project/hw/spi_devices/nt7538/inc"/>
 									<listOptionValue builtIn="false" value="C:/Users/student/Atollic/TrueSTUDIO/ARM_workspace/rumankoys/sp-vrs-rumankoys/basic_project/basic_project/hw/spi_devices/sst_flash/inc"/>
 									<listOptionValue builtIn="false" value="C:/Users/student/Atollic/TrueSTUDIO/ARM_workspace/rumankoys/sp-vrs-rumankoys/basic_project/basic_project/hw/i2c_devices/md25/inc"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/basic_project/src/spi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/basic_project/src/mcp6s92}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/basic_project/src/mcp6s92/inc}&quot;"/>
 								</option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.1532108471" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
 								<option id="com.atollic.truestudio.common_options.target.mcpu.942074645" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
@@ -77,7 +80,7 @@
 								<option id="com.atollic.truestudio.common_options.target.fpu.860378182" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
 								<option id="com.atollic.truestudio.ld.general.scriptfile.1911271255" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\stm32_flash.ld" valueType="string"/>
 								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1947827435" name="Dead code removal" superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
-								<option id="com.atollic.truestudio.ld.libraries.list.2063667353" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list" valueType="libs"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.2063667353" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list"/>
 								<inputType id="com.atollic.truestudio.ld.input.303265798" name="Input" superClass="com.atollic.truestudio.ld.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -401,5 +404,7 @@
 			</profile>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/basic_project"/>
+	</storageModule>
 </cproject>

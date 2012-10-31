@@ -115,6 +115,20 @@ void handleReceivedChar3(unsigned char data)
 }
 
 
+void handleReceivedCharCvicenie6(unsigned char data)
+{
+	if (data == 'A')
+	{
+		PutsUART2("Zapredal som znak A");
+	}
+	else if (data == 'T' || data == 't')
+	{
+		char buf[60];
+		sprintf(buf, "t=%d nehehehe\r\n",tick);
+		PutsUART2(buf);
+	}
+}
+
 void handlerTimer(long long timeStamp){
 	if( TIM3->CCR2 >= 100 )
 		TIM3->CCR2-=100;
@@ -157,10 +171,11 @@ char userButtonUp(){
 
 
 void cvicenie5(void);
+void cvicenie6(void);
 
 int main(void)
 {
-	cvicenie5();
+	cvicenie6();
 
 	return 0;
 }
@@ -173,6 +188,7 @@ void cvicenie5(void){
 	initADS1100();
 
 	initUSART2();	//configures all necessary to use USART2
+
 
 	RegisterCallbackUART2(&handleReceivedChar2);	//register function to be called when interrupt occurs
 	PutsUART2("Running USART2...\r\n");
@@ -202,6 +218,78 @@ void cvicenie5(void){
     }
 
 }
+
+
+#include "mcp6s92.h"
+#include "spi.h"
+
+void ADC_init();
+int ADC_read_potenciometer();
+
+#define GAIN_COUNT 8
+
+void cvicenie6(){
+	int i;
+	int gain[GAIN_COUNT] = { GAIN_1, GAIN_2, GAIN_4, GAIN_5, GAIN_8, GAIN_10, GAIN_16, GAIN_32 };
+	int gain_no[GAIN_COUNT] = { 1, 2, 4, 5, 8, 10, 16, 32 };
+	int actual_gain = 2;
+
+	initUSART2();	//configures all necessary to use USART2
+
+	ADC_init();
+
+	initSPI2();
+
+	initCS_Pin();
+	device_Unselect();
+
+	mcp6s92_setings (CMD_MCP6S92_WRITE_TO_REG,  MCP6S92_CHANNEL_REG_ADDRESS, CHANNEL_0);
+	mcp6s92_setings( CMD_MCP6S92_WRITE_TO_REG,  MCP6S92_GAIN_REG_ADDRESS, gain[actual_gain]);
+
+	RegisterCallbackUART2(&handleReceivedCharCvicenie6);	//register function to be called when interrupt occurs
+	PutsUART2("Running USART2...\r\n");
+
+
+	while(1){
+		char temp[128];
+		int ADdata = ADC_read_potenciometer();
+		double voltage;
+
+		if( ADdata > 4090 ){
+			if( actual_gain > 0 ){
+				actual_gain--;
+				mcp6s92_setings( CMD_MCP6S92_WRITE_TO_REG, MCP6S92_GAIN_REG_ADDRESS, gain[actual_gain]);
+		    	for( i=0; i<50000; i++ );
+				ADdata = ADC_read_potenciometer();
+				for( i=0; i<50000; i++ );
+				continue;
+			}
+		}
+		if( ADdata < 2000 ){
+			if( actual_gain < GAIN_COUNT-1 ){
+				actual_gain++;
+				mcp6s92_setings( CMD_MCP6S92_WRITE_TO_REG, MCP6S92_GAIN_REG_ADDRESS, gain[actual_gain]);
+		    	for( i=0; i<50000; i++ );
+				ADdata = ADC_read_potenciometer();
+				for( i=0; i<50000; i++ );
+				continue;
+			}
+		}
+
+		voltage = (2970.0*ADdata)/gain_no[actual_gain]/4095;
+
+
+		sprintf(temp,"ADC:%d GAIN:%d U:%lf\r\n",ADdata,gain_no[actual_gain],voltage);
+		PutsUART2( temp );
+
+
+		//mcp6s92_setings( CMD_MCP6S92_WRITE_TO_REG, MCP6S92_GAIN_REG_ADDRESS, gain[actual_gain]);
+    	for( i=0; i<500000; i++ );
+	}
+}
+
+
+
 
 
 void old(void){
